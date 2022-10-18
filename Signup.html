@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dental Doctor Desk</title>
+  <link href="setting.css" type="text/css" rel="stylesheet">
+  <script src="datavalid.js" language="javascript">
+	</script>
+</head>
+
+<body>
+<div id="logo"><img src="Logo.jpeg" height="auto" width="auto" alt="LOGO"></div>
+  
+<h2></h2>
+<div id="web">
+    <h3 id="heading">Dental Doctor Desk</h3>
+
+    <p><b>About Dental Doctor Desk</b><br><br>
+      Are you searching for a 'dentist near you'? Dental Doctor Desk welcomes all patients to our affordable clinic.
+      Call us today to achieve your dental goals by scheduling an appointment or complimentary consultation.</p>
+  </div>
+  <div id="contact"><br>
+    <h3 id="heading">Sign Up</h3>
+  
+<form name="newuser" method="post" action="">
+ <table style="top:25%;left:28%; position: absolute;">
+<tr><td><input type="text" id="fname" required name="fname" placeholder="First Name" onBlur="charcheck(fname)"><br>
+ </td></tr><tr><td>
+  <input type="text" id="lname" required name="lname" placeholder="Last Name" onBlur="charcheck(fname)"><br>
+  </td></tr><tr><td>
+  <input type="email" id="email" required name="email" placeholder="Email"><br></td></tr><tr><td>
+  <input type="password" id="password" name="pwd1" placeholder="Password"><br></td></tr><tr><td>
+  <input type="password" id="passwordcheck" name="pwd2" onBlur="comparepass(pwd1,pwd2)" placeholder="Confirm Password"><br><br></td></tr><tr><td>
+	 <input type="image" src="submit.png"></td></tr></table>
+</form> 
+</div>
+<div id="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a>
+        <ul>
+		<li><a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a></li>
+        <li><a href="Invisalign.html" title="Invisalign">Invisalign</a></li>
+		<li><a href="implants.html" title="Dental Implants">Dental Implants</a></li>
+        <li><a href="cleanings.html">Dental Cleanings and Check-Ups</a></li>
+      </ul>
+      </li>
+      <li><a href="patient.html">Patient</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="feedback.html">FeedBack</a></li>
+    </ul>
+  </div>
+  <div id="footer">
+    <h3>Dental Doctor Desk</h3>
+  </div>
+</body>
+</html>

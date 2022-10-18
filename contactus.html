@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Dental Doctor Desk</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link href="setting.css" type="text/css" rel="stylesheet">
+	<script src="datavalid.js" language="javascript">
+	</script>
+</head>
+
+<body>
+	<div id="logo"><img src="Logo.jpeg" height="auto" width="auto" alt="LOGO">
+	</div>
+	<div id="web">
+		<h3 id="heading">Contact Information</h3>
+		<table style="top: 15%;left:18%; position: absolute;">
+			<tr>
+				<td><a href="tel:4032788088">403-278-8088</a></td>
+			</tr>
+			<tr>
+				<td><a href="https://www.google.com/maps/place/NEXA+DENTAL+(Previously+Crown+Dental)/@50.9586677,-114.073143,17z/data=!3m2!4b1!5s0x53717723c8a55e73:0x4989cf1c95b3b710!4m5!3m4!1s0x537171beb1e67857:0x8e4733574be6fd1c!8m2!3d50.9586677!4d-114.073143"
+						target="_blank" rel="noopener">10601 Southport Rd SW #310,<span> Calgary, AB T2W 3M6</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="mailto:info@nexadental.ca">info@nexadental.ca</a></td>
+			</tr>
+		</table>
+		<!--	
+<div style="top:35%; position: absolute; font-size:16;"> -->
+		<br><br>
+		<table style="width:50%;top: 40%;left:15%; position: absolute;">
+			<tr>
+				<td colspan="2">
+					<h2 id="heading">Hours of Operation</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>Mon – Tues :</td>
+				<td>9:00am – 5:00pm</td>
+			</tr>
+			<tr>
+				<td>Wednesday: </td>
+				<td>9:00am – 7:00pm</td>
+			</tr>
+			<tr>
+				<td>Thursday: </td>
+				<td>11:00am – 6:00pm</td>
+			</tr>
+			<tr>
+				<td>Friday: </td>
+				<td>10:00am – 5:00pm</td>
+			</tr>
+			<tr>
+				<td>Saturday: </td>
+				<td>10:00am – 3:00pm</td>
+			</tr>
+		</table>
+		<!--
+	</div> -->
+	</div>
+	<div id="contact">
+		<h3 id="heading">Contact Us</h3>
+		<form name="f1" method="post" action="connect.jsp">
+			<table
+				style="width: auto;top: 25%;left:15%; align-content: flex-start; align-items: flex-start; align-self: flex-start; position: absolute;">
+				<tr>
+					<td><input type="text" name="fname" onBlur="charcheck(fname)" placeholder="First Name"
+							title="Give Your First Name" required></td>
+					<td><input type="text" name="lname" onBlur="charcheck(lname)" placeholder="Last Name"
+							title="Give Your Last Name" required></td>
+				</tr>
+				<tr>
+					<td><input type="email" placeholder="Email Please" title="Give Your email" required></td>
+					<td><input type="text" name="mobile" placeholder="Phone / Mobile Please"
+							title="Give Your Phone / Mobile " onBlur="checkphone(mobile)" required></td>
+				</tr><br>
+				<tr>
+					<td><input type="date" placeholder="YYYY-MM-DD" title="Give Your Preferred Date"></td>
+					<td><input type="time" placeholder="Preferred time Please" title="Give Your Preferred time"></td>
+				</tr><br>
+				<tr>
+					<td><input type="submit" value="New Patient" placeholder="New Patient"
+							title="New Patient Click Here"></td>
+					<td><input type="submit" value="Existing Patient" placeholder="Existing Patient"
+							title="Existing Patient Click Here"></td>
+				</tr><br>
+				<tr>
+					<td colspan="2"><textarea rows="5" name="msg" placeholder="Message" title="Give Message"></textarea>
+					</td>
+				</tr>
+				<tr colspan="2">
+					<td><input type="image" name="save" src="submit.png" title="Submit Detail"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div id="header">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Services</a>
+				<ul>
+					<li><a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a></li>
+					<li><a href="Invisalign.html" title="Invisalign">Invisalign</a></li>
+					<li><a href="implants.html" title="Dental Implants">Dental Implants</a></li>
+					<li><a href="cleanings.html">Dental Cleanings and Check-Ups</a></li>
+				</ul>
+			</li>
+			<li><a href="patient.html">Patient</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a class="active" href="contactus.html">Contact Us</a></li>
+			<li><a href="feedback.html">FeedBack</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+		<p>Are you searching for a 'dentist near you'? Nexa Dental welcomes all patients to our affordable dental
+			office in Willow Park. Call us today to achieve your dental goals by scheduling an appointment or
+			complimentary consultation.</p>
+		<div id="logo"><img src="Footer_logo.png" height="auto" width="20%" alt="LOGO">
+			
+		</div>
+		
+
+		<div>
+			<a href="https://www.instagram.com/nexadentalcalgary/" class="link">
+				<i class="fab fa-instagram instagram"></i>
+			</a>
+			<a href="#" class="link">
+				<i class="fab fa-twitter twitter"></i>
+			</a>
+			<a href="https://www.facebook.com/nexadentalcalgary" class="link">
+				<i class="fab fa-facebook facebook"></i>
+			</a>
+		</div>
+		<div id="hours" class="hours">
+			<h2>Hours of Operation</h2>
+			<ul>
+				<li>Monday : 9:00am - 5:00pm</li>
+				<li>Tuesday : 9:00am - 5:00pm</li>
+				<li>Wednesday: 9:00am - 7:00pm </li>
+				<li>Thursday : 11:00am - 6:00pm</li>
+				<li>Friday : 10:00am - 5:00pm </li>
+				<li>Saturday : 10:00am - 3:00pm</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
