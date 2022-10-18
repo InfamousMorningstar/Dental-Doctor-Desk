@@ -1,13 +1,12 @@
-#logo {
+#hlogo {
 	top: 1%;
 	left: 1%;
-	width: auto;
 	margin-left: 1%;
 	position: absolute;
 }
 
-#logo img {
-	height: 80px;
+#hlogo img {
+	height: 100px;
 	width: 100%;
 }
 
@@ -20,11 +19,11 @@
 }
 
 #header ul {
-	overflow: hidden;
+
 	background-color: #5fb0a7;
 	list-style: none;
 	height: 80px;
-	padding-top: 20px;
+	padding-top: 16px;
 	padding-bottom: 30px;
 	border-radius: 30px;
 }
@@ -32,7 +31,7 @@
 #header ul li {
 	float: left;
 	align-items: center;
-	margin-top: 40px;
+	margin-top: 38px;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -50,17 +49,14 @@
 	color: #1f3a4a;
 }
 
-#header ul li a.active {
-	/*color:#1f3a4a;*/
-}
+
 
 #web {
-	top: 27%;
+	top: 24%;
 	height: 70%;
 	width: 48%;
 	position: absolute;
 	margin-left: 1%;
-	text-align: center;
 	/*text-shadow:0px 0px 10px red, 0px 0px 10px yellow;*/
 	background: #1f3a4a;
 	border-bottom-left-radius: 30px;
@@ -86,15 +82,16 @@ table a.active {
 	color: #5fb0a7;
 }
 
+
 #contact {
-	top: 27%;
+	top: 24%;
 	left: 50%;
 	height: 70%;
 	width: 48%;
 	position: absolute;
-	margin-left: 0.5%;
+	margin-left: 1%;
 	/*text-shadow:0px 0px 10px red, 0px 0px 10px yellow;*/
-	/*	text-align: center;*/
+
 	background: #1f3a4a;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
@@ -104,6 +101,7 @@ table a.active {
 
 #heading {
 	color: #5fb0a7;
+	text-align: center;
 }
 
 input {
@@ -112,6 +110,7 @@ input {
 	border-bottom-color: #ABCDEF;
 	border-top-color: black;
 	font-size: 16;
+
 }
 
 input [type=submit] {
@@ -257,10 +256,10 @@ transition-timing-function: ease-in-out;
 	}*/
 
 #footer {
-	top: 99%;
-	left: 8.5%;
-	height: 200px;
-	width: 80%;
+	top: 95%;
+
+	height: 250px;
+	width: 95%;
 	position: absolute;
 	/*text-shadow:0px 0px 10px red, 0px 0px 10px yellow;*/
 	padding: 0.5% 2%;
@@ -284,12 +283,12 @@ h3 {
 
 .link {
 	text-decoration: none;
-	color: black;
-	float: right;
+	color: #5fb0a7;
 	margin: 10px;
+	margin-top: 30px;
 	width: 50px;
 	height: 50px;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	background: #1f3a4a;
@@ -339,6 +338,7 @@ h3 {
 .link i {
 	font-size: 1.7em;
 	transition: all 0.4s;
+
 }
 
 .link:hover i {
@@ -358,14 +358,63 @@ h3 {
 	color: #0000ff;
 }
 
-.hours {
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
 
-	align-items: center;
-	float: right;
-	width: 50%;
-	top: 0.5%;
-	left: 40%;
-	size: 26px;
+.dropdown-content {
+	display: none;
 	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
 
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+#flogo {
+	padding-top: 1%;
+	margin-left: 15px;
+	position: absolute;
+}
+
+#flogo img {
+	height: 80px;
+	width: 100%;
+}
+
+#cfooter {
+	margin-left: 25px;
+}
+
+#middlefooter table{
+	margin-left: 35%;
+	width: 27%;
+	color: #1f3a4a;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+}
+#middlefooter table #heading{
+	margin-left: 26%;
+	color: #1f3a4a;
 }

@@ -10,11 +10,11 @@
 </head>
 
 <body>
-	<div id="logo"><img src="Logo.jpeg" height="auto" width="auto" alt="LOGO">
+	<div id="hlogo"><img src="img/Logo.jpg" height="auto" width="auto" alt="LOGO">
 	</div>
 	<div id="web">
 		<h3 id="heading">Contact Information</h3>
-		<table style="top: 15%;left:18%; position: absolute;">
+		<table style="top: 15%;left:16%; position: absolute;">
 			<tr>
 				<td><a href="tel:4032788088">403-278-8088</a></td>
 			</tr>
@@ -30,30 +30,35 @@
 		<!--	
 <div style="top:35%; position: absolute; font-size:16;"> -->
 		<br><br>
-		<table style="width:50%;top: 40%;left:15%; position: absolute;">
+		<table style="width:50%;top: 40%; left: 16%; position: absolute;">
 			<tr>
 				<td colspan="2">
 					<h2 id="heading">Hours of Operation</h2>
 				</td>
 			</tr>
 			<tr>
-				<td>Mon – Tues :</td>
+				<td>Mon – Tues </td>
+				<td>:</td>
 				<td>9:00am – 5:00pm</td>
 			</tr>
 			<tr>
-				<td>Wednesday: </td>
+				<td>Wednesday </td>
+				<td>:</td>
 				<td>9:00am – 7:00pm</td>
 			</tr>
 			<tr>
-				<td>Thursday: </td>
+				<td>Thursday </td>
+				<td>:</td>
 				<td>11:00am – 6:00pm</td>
 			</tr>
 			<tr>
-				<td>Friday: </td>
+				<td>Friday </td>
+				<td>:</td>
 				<td>10:00am – 5:00pm</td>
 			</tr>
 			<tr>
-				<td>Saturday: </td>
+				<td>Saturday </td>
+				<td>:</td>
 				<td>10:00am – 3:00pm</td>
 			</tr>
 		</table>
@@ -72,13 +77,13 @@
 							title="Give Your Last Name" required></td>
 				</tr>
 				<tr>
-					<td><input type="email" placeholder="Email Please" title="Give Your email" required></td>
+					<td><input type="email" name="email" placeholder="Email Please" title="Give Your email" required></td>
 					<td><input type="text" name="mobile" placeholder="Phone / Mobile Please"
 							title="Give Your Phone / Mobile " onBlur="checkphone(mobile)" required></td>
 				</tr><br>
 				<tr>
-					<td><input type="date" placeholder="YYYY-MM-DD" title="Give Your Preferred Date"></td>
-					<td><input type="time" placeholder="Preferred time Please" title="Give Your Preferred time"></td>
+					<td><input type="date" name="date" placeholder="YYYY-MM-DD" title="Give Your Preferred Date"></td>
+					<td><input type="time" name="time" placeholder="Preferred time Please" title="Give Your Preferred time"></td>
 				</tr><br>
 				<tr>
 					<td><input type="submit" value="New Patient" placeholder="New Patient"
@@ -91,7 +96,7 @@
 					</td>
 				</tr>
 				<tr colspan="2">
-					<td><input type="image" name="save" src="submit.png" title="Submit Detail"></td>
+					<td><input type="submit" class="button"></td>
 				</tr>
 			</table>
 		</form>
@@ -100,14 +105,15 @@
 	<div id="header">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Services</a>
-				<ul>
-					<li><a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a></li>
-					<li><a href="Invisalign.html" title="Invisalign">Invisalign</a></li>
-					<li><a href="implants.html" title="Dental Implants">Dental Implants</a></li>
-					<li><a href="cleanings.html">Dental Cleanings and Check-Ups</a></li>
-				</ul>
-			</li>
+			<div class="dropdown">
+				<li><a href="#">Services</a></li>
+				<div class="dropdown-content">
+					<a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a>
+					<a href="Invisalign.html" title="Invisalign">Invisalign</a>
+					<a href="implants.html" title="Dental Implants">Dental Implants</a>
+					<a href="cleanings.html">Dental Cleanings and Check-Ups</a>
+				</div>
+			</div>
 			<li><a href="patient.html">Patient</a></li>
 			<li><a href="aboutus.html">About Us</a></li>
 			<li><a class="active" href="contactus.html">Contact Us</a></li>
@@ -115,37 +121,62 @@
 		</ul>
 	</div>
 	<div id="footer">
-		<p>Are you searching for a 'dentist near you'? Nexa Dental welcomes all patients to our affordable dental
-			office in Willow Park. Call us today to achieve your dental goals by scheduling an appointment or
-			complimentary consultation.</p>
-		<div id="logo"><img src="Footer_logo.png" height="auto" width="20%" alt="LOGO">
-			
-		</div>
-		
 
-		<div>
-			<a href="https://www.instagram.com/nexadentalcalgary/" class="link">
-				<i class="fab fa-instagram instagram"></i>
-			</a>
-			<a href="#" class="link">
-				<i class="fab fa-twitter twitter"></i>
-			</a>
-			<a href="https://www.facebook.com/nexadentalcalgary" class="link">
-				<i class="fab fa-facebook facebook"></i>
-			</a>
+		<div id="flogo"><img src="img/flogo.png" height="auto" width="auto" alt="LOGO">
+			<div id="cfooter">
+				<a href="https://www.instagram.com/nexadentalcalgary/" class="link">
+					<i class="fab fa-instagram instagram"></i>
+				</a>
+				<a href="#" class="link">
+					<i class="fab fa-twitter twitter"></i>
+				</a>
+				<a href="https://www.facebook.com/nexadentalcalgary" class="link">
+					<i class="fab fa-facebook facebook"></i>
+				</a>
+			</div>
 		</div>
-		<div id="hours" class="hours">
-			<h2>Hours of Operation</h2>
-			<ul>
-				<li>Monday : 9:00am - 5:00pm</li>
-				<li>Tuesday : 9:00am - 5:00pm</li>
-				<li>Wednesday: 9:00am - 7:00pm </li>
-				<li>Thursday : 11:00am - 6:00pm</li>
-				<li>Friday : 10:00am - 5:00pm </li>
-				<li>Saturday : 10:00am - 3:00pm</li>
-			</ul>
+
+		<div id="middlefooter">
+			<table>
+				<tr>
+					<td colspan="2">
+						<h2 id="heading">Hours of Operation</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>:</td>
+					<td>9:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>:</td>
+					<td>9:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>:</td>
+					<td>9:00am – 7:00pm</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>:</td>
+					<td>11:00am – 6:00pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>:</td>
+					<td>10:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>:</td>
+					<td>10:00am – 3:00pm</td>
+				</tr>
+			</table>
 		</div>
+
 	</div>
 </body>
 
-</html>
+</html>>

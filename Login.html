@@ -1,17 +1,19 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Dental Doctor Desk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link href="setting.css" type="text/css" rel="stylesheet">
   <script src="datavalid.js" language="javascript">
-	</script>
+  </script>
 </head>
 
 <body>
-<div id="logo"><img src="Logo.jpeg" height="auto" width="auto" alt="LOGO"></div>
-  
-<h2></h2>
-<div id="web">
+  <div id="hlogo"><img src="img/Logo.jpg" height="auto" width="auto" alt="LOGO"></div>
+
+  <h2></h2>
+  <div id="web">
     <h3 id="heading">Dental Doctor Desk</h3>
 
     <p><b>About Dental Doctor Desk</b><br><br>
@@ -20,34 +22,100 @@
   </div>
   <div id="contact"><br>
     <h3 id="heading">Login</h3>
-  
-<form name="login" method="post" action=""><table style="top:25%;left:28%; position: absolute;">
-<tr><td>
-  <input type="email" id="email" name="email" placeholder="Email" required></td></tr><br><tr><td>
-  <input type="password" id="pword" name="pwd" placeholder="Password" required onBlur="passcheck(pwd)"></td></tr><br><tr><td>
-  <input type="image" src="logint.png">
-  <input type="submit" value="Sign up"></td></tr></table>
-</form> </div>
-<div id="header">
+
+    <form name="login" method="post" action="">
+      <table style="top:25%;left:28%; position: absolute;">
+        <tr>
+          <td>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </td>
+        </tr><br>
+        <tr>
+          <td>
+            <input type="password" id="pword" name="pwd" placeholder="Password" required onBlur="passcheck(pwd)">
+          </td>
+        </tr><br>
+        <tr>
+          <td>
+            <input type="image" src="logint.png">
+            <input type="submit" value="Sign up">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="header">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">Services</a>
-        <ul>
-		<li><a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a></li>
-        <li><a href="Invisalign.html" title="Invisalign">Invisalign</a></li>
-		<li><a href="implants.html" title="Dental Implants">Dental Implants</a></li>
-        <li><a href="cleanings.html">Dental Cleanings and Check-Ups</a></li>
-      </ul>
-      </li>
+      <div class="dropdown">
+        <li><a href="#">Services</a></li>
+        <div class="dropdown-content">
+          <a href="cosmeticinj.html" title="Cosmetic Injections">Cosmetic Injections</a>
+          <a href="Invisalign.html" title="Invisalign">Invisalign</a>
+          <a href="implants.html" title="Dental Implants">Dental Implants</a>
+          <a href="cleanings.html">Dental Cleanings and Check-Ups</a>
+        </div>
+      </div>
       <li><a href="patient.html">Patient</a></li>
       <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a class="active" href="contactus.html">Contact Us</a></li>
       <li><a href="feedback.html">FeedBack</a></li>
     </ul>
   </div>
   <div id="footer">
-    <h3>Dental Doctor Desk</h3>
-  </div>
+    <div id="flogo"><img src="img/flogo.png" height="auto" width="auto" alt="LOGO">
 
+      <div><a href="https://www.instagram.com/nexadentalcalgary/" class="link">
+        <i class="fab fa-instagram instagram"></i>
+      </a>
+      <a href="#" class="link">
+        <i class="fab fa-twitter twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/nexadentalcalgary" class="link">
+        <i class="fab fa-facebook facebook"></i>
+      </a>
+    </div></div>
+    <div id="middlefooter">
+			<table>
+				<tr>
+					<td colspan="2">
+						<h2 id="heading">Hours of Operation</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>:</td>
+					<td>9:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>:</td>
+					<td>9:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>:</td>
+					<td>9:00am – 7:00pm</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>:</td>
+					<td>11:00am – 6:00pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>:</td>
+					<td>10:00am – 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>:</td>
+					<td>10:00am – 3:00pm</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
 </body>
+
 </html>

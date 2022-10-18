@@ -1,18 +1,23 @@
-v<html>
+<html>
+
 <body>
 
-<h2>Request an Appointment</h2>
+  <h2>Request an Appointment</h2>
 
-<form action="">
-  <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-  <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-  <input type="email" id="email" name="email" placeholder="Email"><br>
-  <input type="button" value="NEW PATIENT">
-  <input type="button" value="EXISTING PATIENT"><br>
-  <label for="appointment"> Appointment Date:</label>
-  <input type="date" id="appointment" name="appointment"><br>
-  <input type="submit" value="Submit">
-</form> 
+  <form action="connect.jsp" method="post">
+    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+    <input type="email" id="email" name="email" placeholder="Email"><br>
+    <input type="text" name="mobile" placeholder="Phone / Mobile Please" title="Give Your Phone / Mobile "
+      onBlur="checkphone(mobile)" required><br>
+    <input type="time" name="time" placeholder="Preferred time Please" title="Give Your Preferred time">
+    <input type="button" value="NEW PATIENT">
+    <input type="button" value="EXISTING PATIENT"><br>
+    <label for="appointment"> Appointment Date:</label>
+    <input type="date" id="appointment" name="date"><br>
+    <input type="submit" value="post">
+  </form>
 
 </body>
+
 </html>
