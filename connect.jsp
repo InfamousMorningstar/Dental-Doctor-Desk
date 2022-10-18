@@ -11,7 +11,7 @@ String time = request.getParameter("time");
 try {
 
 Class.forName("com.mysql.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","mysql")
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","")
 PreparedStatement ps = conn.prepareStatement("insert into patient(firstname, lastname, email, mobile, date, time") values("?,?,?,?,?,?");
 ps.setString(1,firstname);
 ps.setString(2,lastname);
